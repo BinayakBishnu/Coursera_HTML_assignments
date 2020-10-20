@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Solution for Week-2 Assignment</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                font-family:cursive;
+            }
+            body{
+                width: 100%;
+            }
+            section{
+                word-wrap: break-word;
+                background-color: gray;
+                width: 30%;
+                height: 150px;
+                margin: 20px;
+                border: 2px solid black;
+                padding: 0px;
+                /*float: left;*/
+                overflow: scroll;                                
+            }
+            .white{
+                color: #ffffff;
+            }            
+            div{
+                float:right;
+                text-align: center;
+                border: 1px solid black;
+                width: 100px;
+                
+                margin: 0px;
+                padding: 0px 0px 0px 0px;               
+
+            }
+            .chicken{
+                background-color: pink;
+            }
+            .beef-div{
+                background-color: red;
+            }
+            .sushi-div{
+                background-color: yellow;
+            }
+            p.p1{
+                clear:both;
+            }
+            h1{
+                text-align: center;                
+            }
+            h3{
+                margin: 0px;
+                padding: 0px;
+            }
+            @media (min-width: 992px){
+                section{
+                    width: 28%;
+                    float: left;
+                }
+            }
+            @media (min-width: 768px) and (max-width: 991px){
+                section{
+                    float: left;
+                }
+                .chicken-sec{
+                    float: left;
+                }
+                .beef-sec{
+                    float: right;
+                }
+                .sushi-sec{
+                    width: 100%;                    
+                }
+            }
+            @media (max-width: 767px;){
+                .beef-sec{                   
+                    width: 100%;
+                }
+                #chicken-sec{
+                    
+                }
+                .sushi-sec{
+                    
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <section id="chicken-sec">
+            
+            
+                <div class="chicken">
+                    <h3>
+                        Chicken
+                    </h3>
+                </div>
+                <p class="p1">
+                A variety of dishes are available in chicken. You can choose from fried, grilled or curry!!
+                Please do try our special Kebabs too!
+            </p>
+        </section>
+        <section>
+            
+            
+                <div class="beef-div">
+                    <h3 class="white">
+                        Beef
+                    </h3>
+                </div>
+                <p class="p1">
+                Just like in chicken, a variety of dishes are available for beef. Oven grilled is our speciality!!!
+                </p>
+        </section>
+        <section class="sushi-sec">
+            
+          
+                <div class="sushi-div">
+                    <h3>
+                        Sushi
+                    </h3>
+                </div>
+                <p class="p1">
+                We have our trademark Sushi rolls which are available only here! You can also try traditional Sushi dishes.
+            </p>
+        </section>
+    </body>
+</html>
