@@ -64,14 +64,19 @@
                 section{
                     float: left;
                 }
+                body{float: left;}
                 .chicken-sec{
                     float: left;
+                    margin-right: 30%;
                 }
                 .beef-sec{
                     float: right;
+                    
                 }
                 .sushi-sec{
-                    width: 100%;                    
+                    width: 100%;
+                    box-sizing: border-box; 
+                    margin: 0px;                   
                 }
             }
             @media (max-width: 767px;){
@@ -89,7 +94,7 @@
     </head>
     <body>
         <h1>Our Menu</h1>
-        <section id="chicken-sec">
+        <section class="chicken-sec">
             
             
                 <div class="chicken">
